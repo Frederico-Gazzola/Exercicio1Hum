@@ -2,10 +2,10 @@ package espm.poo.Ex1;
 
 public class Funcionario {
     
-    String cpf;
-    String nome;
-    double salario;
-    double valeRefeicao = 550.00;
+    public String cpf;
+    public String nome;
+    public double salario;
+    public double valeRefeicao = 550.00;
 
     public String retornarDado() {
         return "{nome: " + nome +
@@ -19,6 +19,6 @@ public class Funcionario {
     }
 
     public void ajustarValeRefeicao(double porcentagem) {
-        valeRefeicao = salario * porcentagem;
+        valeRefeicao = valeRefeicao * porcentagem;
     }
 }

@@ -2,15 +2,19 @@ package espm.poo.Ex1;
 
 public class Cliente {
 
-    String nome;
-    String cpf;
-    CartaoDeCredito cartao = new CartaoDeCredito();
+    public String nome;
+    public String cpf;
+    public CartaoDeCredito cartao = new CartaoDeCredito();
+    public Conta conta = new Conta();
 
     public String retornarDados() {
         return  "{nome: " + nome +
-                "cpf: " + cpf + "numero: "
-                + cartao.numero + "saldo: "
-                + cartao.totalFatura + "}";
+                " cpf: " + cpf + " número cartão: "
+                + cartao.numero + " saldo cartão: "
+                + cartao.totalFatura + " número conta: " +
+                conta.numero + " saldo conta: " +
+                conta.saldo + " limite conta: " + 
+                conta.limite + "}";
         
     }
 

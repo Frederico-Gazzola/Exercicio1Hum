@@ -2,8 +2,8 @@ package espm.poo.Ex1;
 
 public class CartaoDeCredito {
 
-    int numero;
-    double totalFatura;
+    public int numero;
+    public double totalFatura;
 
     public double consultarFatura() {
         return totalFatura;

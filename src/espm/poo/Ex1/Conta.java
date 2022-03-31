@@ -2,9 +2,9 @@ package espm.poo.Ex1;
 
 public class Conta {
     
-    int numero;
-    double saldo;
-    double limite;
+    public int numero;
+    public double saldo;
+    public double limite;
 
     public void sacar(double valor) {
         saldo = saldo - valor;
